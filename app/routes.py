@@ -2,7 +2,7 @@ from fastapi import APIRouter, HTTPException
 from app.models import SentimentRequest, SentimentResponse
 from app.sentiment_service import analyze_sentiment
 
-router = APIRouter()
+router = APIRouter(prefix="/v1")
 
 @router.post("/analyze", response_model=SentimentResponse)
 def analyze(request: SentimentRequest):

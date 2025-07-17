@@ -34,12 +34,12 @@ Users authenticate with their own GCP credentials (base64-encoded), ensuring cos
 git clone https://github.com/yourusername/text-sentiment-api.git
 cd text-sentiment-api
 ```
-2. Create and activate a virtual environment (optional but recommended)
+### 2. Create and activate a virtual environment (optional but recommended)
 ```bash
 python3 -m venv venv
 source venv/bin/activate  # On Windows: venv\Scripts\activate
 ```
-3. Install dependencies
+### 3. Install dependencies
 ```bash
 pip install -r requirements.txt
 ```
@@ -77,7 +77,7 @@ Response
 Endpoint: ```GET /v1/health```
 Simple health check returning status.
 
-🐳 Docker Usage
+### 🐳 Docker Usage
 Build the Docker image:
 
 ```bash
@@ -90,7 +90,7 @@ docker run -p 8000:8000 sentiment-api:1.0.0
 ```
 Then access the API at ```http://localhost:8000```.
 
-🏷️ Versioning
+### 🏷️ Versioning
 API version is set to v1.0.0.
 
 Routes are prefixed with /v1 to support parallel versions in the future.
@@ -99,29 +99,25 @@ Git tag ```v1.0.0``` marks this initial stable release.
 
 Future major releases (e.g., v2.0.0) will include breaking changes and new features.
 
-📜 CHANGELOG
+### 📜 CHANGELOG
 See CHANGELOG.md for details on version history and changes.
 
-⚙️ Deployment Notes
+### ⚙️ Deployment Notes
 Users must enable Google Cloud Natural Language API in their own projects.
 
 Users provide their own base64-encoded service account JSON, ensuring all billing happens on their accounts.
 
 No credentials or secrets are stored on this API.
 
-🤝 Contributing
-Contributions are welcome! Please open issues or PRs on GitHub.
-For guidelines, see CONTRIBUTING.md.
-
-📄 License
+### 📄 License
 This project is licensed under the MIT License. See LICENSE for details.
 
-🔗 Links
+### 🔗 Links
 GitHub Repo: https://github.com/yourusername/text-sentiment-api
 
 Google Cloud Natural Language API docs: https://cloud.google.com/natural-language/docs
 
-🙋‍♂️ Support / Questions
+### 🙋‍♂️ Support / Questions
 If you encounter any issues or have questions, feel free to open an issue on GitHub or contact the maintainer.
 
 Thank you for using the Text Sentiment Analysis API!
